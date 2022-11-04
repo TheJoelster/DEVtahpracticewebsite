@@ -33,6 +33,7 @@ var continueDiv = document.getElementById("continueDiv")
 var solutionDiv = document.getElementById("solutionDiv")
 var feedbackText = document.getElementById("feedbackText")
 var solutionExpand = document.getElementById("solutionExpand")
+var questionNumber = document.getElementById("questionNumber")
 
 //speedscore variable
 var speedUpper;
@@ -80,6 +81,7 @@ fetch(directQ)
         speedUpper = dataQA[i]["timeUpper"]
         speedMidRange = dataQA[i]["timeMid"]
         speedLower = dataQA[i]["timeLower"]
+        questionNumber.innerHTML = "Question " + (i+1) + " of " + (dataQuizLength+1);
         console.log("Speed Upper Req:" + speedUpper)
        } )
 
@@ -106,8 +108,8 @@ function checkAnswer() {
 
         continueDiv.style.backgroundColor = '#d5ffd5';
         solutionDiv.style.backgroundColor = '#d5ffd5';
-        feedbackText.style.backgroundColor = '#348926';
-        solutionExpand.style.Color = '#348926';
+        feedbackText.style.color = '#348926';
+        solutionExpand.style.color = '#348926';
         feedbackText.innerHTML = '&#10004; Great job!';
         continueButton.classList.remove('buttonStOr')
         continueButton.classList.add('buttonStGr')
@@ -144,9 +146,9 @@ function checkAnswer() {
         
         continueDiv.style.backgroundColor = '#ffeed0';
         solutionDiv.style.backgroundColor = '#ffeed0';
-        feedbackText.style.Color = '#8a5d16';
+        feedbackText.style.color = '#8a5d16';
+        solutionExpand.style.color = '#8a5d16';
         feedbackText.innerHTML = '&#33; Not quite.';
-        solutionExpand.style.backgroundColor = '#8a5d16';
         continueButton.classList.remove('buttonStGr')
         continueButton.classList.add('buttonStOr')
         inco++;
@@ -160,6 +162,7 @@ function loadNextQuestion() {
     if (i < dataQuizLength) {
     i++;
     console.log(i)
+    questionNumber.innerHTML = "Question " + (i+1) + " of " + (dataQuizLength+1);
     questionDisplay.textContent = dataQA[i]["qu"]
     o1.textContent = dataQA[i]["a1"]
     o2.textContent = dataQA[i]["a2"]
