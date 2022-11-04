@@ -29,6 +29,7 @@ var ansNumber;
 var ansExplain;
 var checkButton = document.getElementById("checkButton")
 var continueButton = document.getElementById("continueButton")
+var continueDiv = document.getElementById("continueDiv")
 
 //speedscore variable
 var speedUpper;
@@ -89,6 +90,7 @@ function checkAnswer() {
     selectedValue = selection.value;
     checkButton.style.visibility = 'hidden';
     continueButton.style.visibility = 'visible';
+    continueDiv.style.visibility = 'visible';
     clearInterval();
     console.log(speedTimer);
 
@@ -97,6 +99,11 @@ function checkAnswer() {
         console.log(ansValue)
         console.log(selectedValue)
         console.log("Speed Upper Req:" + speedUpper)
+
+        continueDiv.style.backgroundColor = 'rgb(108, 224, 115)';
+        continueButton.classList.remove('buttonStOr')
+        continueButton.classList.add('buttonStGr')
+
         if (speedTimer < speedLower)
         {
             speedPointsCount +=3;
@@ -126,6 +133,10 @@ function checkAnswer() {
     else {console.log("wrong")
         console.log(ansValue)
         console.log(selectedValue)
+        
+        continueDiv.style.backgroundColor = '#eca839';
+        continueButton.classList.remove('buttonStGr')
+        continueButton.classList.add('buttonStOr')
         inco++;
         
     }
@@ -149,6 +160,7 @@ function loadNextQuestion() {
     console.log("Speed Upper Req:" + speedUpper)
     continueButton.style.visibility = 'hidden';
     checkButton.style.visibility = 'visible';
+    continueDiv.style.visibility = 'hidden';
     speedTimer = 0;
     setInterval(function () {}, 1000);
     }
