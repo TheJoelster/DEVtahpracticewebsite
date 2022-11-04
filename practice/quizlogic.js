@@ -31,6 +31,8 @@ var checkButton = document.getElementById("checkButton")
 var continueButton = document.getElementById("continueButton")
 var continueDiv = document.getElementById("continueDiv")
 var solutionDiv = document.getElementById("solutionDiv")
+var feedbackText = document.getElementById("feedbackText")
+var solutionExpand = document.getElementById("solutionExpand")
 
 //speedscore variable
 var speedUpper;
@@ -104,6 +106,9 @@ function checkAnswer() {
 
         continueDiv.style.backgroundColor = '#d5ffd5';
         solutionDiv.style.backgroundColor = '#d5ffd5';
+        feedbackText.style.backgroundColor = '#348926';
+        solutionExpand.style.backgroundColor = '#348926';
+        feedbackText.innerHTML = '&#10004; Great job!';
         continueButton.classList.remove('buttonStOr')
         continueButton.classList.add('buttonStGr')
 
@@ -139,6 +144,9 @@ function checkAnswer() {
         
         continueDiv.style.backgroundColor = '#ffeed0';
         solutionDiv.style.backgroundColor = '#ffeed0';
+        feedbackText.style.backgroundColor = '#8a5d16';
+        feedbackText.innerHTML = '&#33; Not quite.';
+        solutionExpand.style.backgroundColor = '#8a5d16';
         continueButton.classList.remove('buttonStGr')
         continueButton.classList.add('buttonStOr')
         inco++;
