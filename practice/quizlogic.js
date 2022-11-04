@@ -30,6 +30,7 @@ var ansExplain;
 var checkButton = document.getElementById("checkButton")
 var continueButton = document.getElementById("continueButton")
 var continueDiv = document.getElementById("continueDiv")
+var solutionDiv = document.getElementById("solutionDiv")
 
 //speedscore variable
 var speedUpper;
@@ -91,6 +92,7 @@ function checkAnswer() {
     checkButton.style.visibility = 'hidden';
     continueButton.style.visibility = 'visible';
     continueDiv.style.visibility = 'visible';
+    solutionDiv.style.visibility = 'visible';
     clearInterval();
     console.log(speedTimer);
 
@@ -100,7 +102,8 @@ function checkAnswer() {
         console.log(selectedValue)
         console.log("Speed Upper Req:" + speedUpper)
 
-        continueDiv.style.backgroundColor = 'rgb(108, 224, 115)';
+        continueDiv.style.backgroundColor = '#d5ffd5';
+        solutionDiv.style.backgroundColor = '#d5ffd5';
         continueButton.classList.remove('buttonStOr')
         continueButton.classList.add('buttonStGr')
 
@@ -134,7 +137,8 @@ function checkAnswer() {
         console.log(ansValue)
         console.log(selectedValue)
         
-        continueDiv.style.backgroundColor = '#eca839';
+        continueDiv.style.backgroundColor = '#ffeed0';
+        solutionDiv.style.backgroundColor = '#ffeed0';
         continueButton.classList.remove('buttonStGr')
         continueButton.classList.add('buttonStOr')
         inco++;
@@ -161,6 +165,7 @@ function loadNextQuestion() {
     continueButton.style.visibility = 'hidden';
     checkButton.style.visibility = 'visible';
     continueDiv.style.visibility = 'hidden';
+    solutionDiv.style.visibility = 'hidden';
     speedTimer = 0;
     setInterval(function () {}, 1000);
     }
