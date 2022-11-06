@@ -70,7 +70,7 @@ var checkIfNew = false;
 //function picks a random number
 function randomQ() {
     while (checkIfNew === false) {
-    i = Math.floor(Math.random() * (dataTotalQuestions+1));
+    i = Math.floor(Math.random() * (dataTotalQuestions-1));
     console.log("i is: " + i);
          for (let numCheck = 0; numCheck < completedQuestions.length; numCheck++) {
             if (i === completedQuestions[numCheck]) {
@@ -101,7 +101,7 @@ fetch(directQ)
         //console log validates data is loading correctly for debugging.
         console.log(data)
         console.log(data.quizID)
-        i = Math.floor(Math.random() * (dataTotalQuestions+1));
+        i = Math.floor(Math.random() * (dataTotalQuestions-1));
         completedQuestions[n] = i;
         console.log("Questionbank: " + completedQuestions[n]);
 
