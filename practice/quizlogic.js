@@ -34,6 +34,7 @@ var solutionDiv = document.getElementById("solutionDiv")
 var feedbackText = document.getElementById("feedbackText")
 var solutionExpand = document.getElementById("solutionExpand")
 var questionNumber = document.getElementById("questionNumber")
+var solutionText = document.getElementById("sol-text") 
 
 //speedscore variable
 var speedUpper;
@@ -69,7 +70,7 @@ var checkIfNew = false;
 //function picks a random number
 function randomQ() {
     while (checkIfNew === false) {
-    i = Math.floor(Math.random() * (dataTotalQuestions));
+    i = Math.floor(Math.random() * (dataTotalQuestions+1));
     console.log("i is: " + i);
          for (let numCheck = 0; numCheck < completedQuestions.length; numCheck++) {
             if (i === completedQuestions[numCheck]) {
@@ -95,11 +96,12 @@ fetch(directQ)
     .then(response => response.json())
     .then(data => {
         dataQA = data["questionList"]
-        dataTotalQuestions = data["quCountMinusOne"]
+        dataTotalQuestions = data["totalQuCount"]
+        dataQuizLength = data["quCountToDisplay"]
         //console log validates data is loading correctly for debugging.
         console.log(data)
         console.log(data.quizID)
-        i = Math.floor(Math.random() * (dataTotalQuestions));
+        i = Math.floor(Math.random() * (dataTotalQuestions+1));
         completedQuestions[n] = i;
         console.log("Questionbank: " + completedQuestions[n]);
 
@@ -112,6 +114,7 @@ fetch(directQ)
         speedUpper = dataQA[i]["timeUpper"]
         speedMidRange = dataQA[i]["timeMid"]
         speedLower = dataQA[i]["timeLower"]
+        solutionText.textContent = dataQA[i]["solution"]
         questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
         console.log("Speed Upper Req:" + speedUpper)
        } )
@@ -205,6 +208,7 @@ function loadNextQuestion() {
     speedUpper = dataQA[i]["timeUpper"]
     speedMidRange = dataQA[i]["timeMid"]
     speedLower = dataQA[i]["timeLower"]
+    solutionText.textContent = dataQA[i]["solution"]
     console.log("Speed Upper Req:" + speedUpper)
     continueButton.style.visibility = 'hidden';
     checkButton.style.visibility = 'visible';

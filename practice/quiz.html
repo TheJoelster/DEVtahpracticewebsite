@@ -4,19 +4,7 @@
 <style>
 
 
-:root{
-  --currentProgressBar: 0%;
-  --newProgressBar: 0%;
-}
 
-.progress {
-  margin: 50px auto;
-  padding: 2px;
-  width: 100%;
-  max-width: 80%;
-  border: 1px solid grey;
-  height: 30px;
-}
 
 
 #multiplechoice{
@@ -52,6 +40,38 @@
   text-align: center;
   visibility: hidden; 
 
+}
+
+#sol-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#sol-text{
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#sol-close{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-80%);
+  -ms-transform: translate(-50%,-80%);
 }
 
 
@@ -93,21 +113,25 @@
         <div style="height: 30px"></div>
 
         <div id="solutionDiv" style="visibility: hidden; width: 80%; border-radius: 25px; height: 50px; margin: auto;">
-          <h1 id="solutionExpand" class="head1Text;" style=" transform: translate(0px, 10px); font-size: 20px; font-weight: 600;">	&plus; View Solution</h1>
+          <h1 id="solutionExpand" class="head1Text;" style=" transform: translate(0px, 10px); font-size: 20px; font-weight: 600;" onclick="on()">	&plus; View Solution</h1>
         </div>
 
-        <script>
-            var progress = 0;
-
-            function progressMove() {
-              let root = document.documentElement;
-
-              root.style.setProperty("--currentProgressBar", progress + 10 + "%");
-              progress = progress + 10;
-            }
-
-
+        <div id="sol-overlay">
+          <div style="width: 90%; height: 90%; border-radius: 100px; background-color: white; margin: auto;">
+            <p id="sol-text" class="head1Text">Overlay Text</p>
+            <button id="sol-close" class="buttonStOr" onclick="off()">Close Solution</button>
+          </div>
+        </div>
         
+
+        <script>
+          function on() {
+            document.getElementById("sol-overlay").style.display = "block";
+          }
+
+          function off() {
+            document.getElementById("sol-overlay").style.display = "none";
+          }
         </script>
 
         <script type="text/javascript" src="quizlogic.js"></script>
