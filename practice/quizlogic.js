@@ -14,7 +14,7 @@ console.log(directQ);
 
 
 //this includes data for quiz length
-var dataQuizLength;
+var dataQuizLength = 7;
 
 //this array stores info of json file
 var dataQA;
@@ -59,6 +59,33 @@ var ansValue;
 //controls which question is loaded
 var i = 0;
 
+//question number
+var n = 0;
+
+//completed questions for random question loading
+var completedQuestions = [0];
+var checkIfNew = false;
+
+//function picks a random number
+function randomQ() {
+    while (checkIfNew === false) {
+    i = Math.floor(Math.random() * (dataTotalQuestions));
+    console.log("i is: " + i);
+         for (let numCheck = 0; numCheck < completedQuestions.length; numCheck++) {
+            if (i === completedQuestions[numCheck]) {
+            checkIfNew = false;
+            break;
+            }
+            else {
+            checkIfNew = true;
+            }
+        }
+    }
+    completedQuestions[n] = i;
+    checkIfNew = false;
+}
+
+
 //right/wrong count
 var corr = 0;
 var inco = 0;
@@ -68,10 +95,14 @@ fetch(directQ)
     .then(response => response.json())
     .then(data => {
         dataQA = data["questionList"]
-        dataQuizLength = data["quCountMinusOne"]
+        dataTotalQuestions = data["quCountMinusOne"]
         //console log validates data is loading correctly for debugging.
         console.log(data)
         console.log(data.quizID)
+        i = Math.floor(Math.random() * (dataTotalQuestions));
+        completedQuestions[n] = i;
+        console.log("Questionbank: " + completedQuestions[n]);
+
         questionDisplay.textContent = dataQA[i]["qu"]
         o1.textContent = dataQA[i]["a1"]
         o2.textContent = dataQA[i]["a2"]
@@ -81,7 +112,7 @@ fetch(directQ)
         speedUpper = dataQA[i]["timeUpper"]
         speedMidRange = dataQA[i]["timeMid"]
         speedLower = dataQA[i]["timeLower"]
-        questionNumber.innerHTML = "Question " + (i+1) + " of " + (dataQuizLength+1);
+        questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
         console.log("Speed Upper Req:" + speedUpper)
        } )
 
@@ -158,11 +189,13 @@ function checkAnswer() {
 
 function loadNextQuestion() {
 
-    //if question count is less than 10, load next question, otherwise go to results page with context
-    if (i < dataQuizLength) {
-    i++;
-    console.log(i)
-    questionNumber.innerHTML = "Question " + (i+1) + " of " + (dataQuizLength+1);
+    //if question count is less than 7, load next question, otherwise go to results page with context
+    if (n < (dataQuizLength-1)) {
+    n++;
+    console.log(n)
+    questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
+    randomQ();
+    console.log("Questionbank: " + i);
     questionDisplay.textContent = dataQA[i]["qu"]
     o1.textContent = dataQA[i]["a1"]
     o2.textContent = dataQA[i]["a2"]
@@ -189,7 +222,7 @@ function loadNextQuestion() {
             window.location.href = url;
         }
 
-        redirectPage(corr/(dataQuizLength+1)*100 + "%", speedPointsCount/(dataQuizLength+1)*10 + "%", subjectQ, identQ, nameQ)
+        redirectPage(Math.round(corr/(dataQuizLength)*100) + "%", Math.round(speedPointsCount/(dataQuizLength)*10) + "%", subjectQ, identQ, nameQ)
     }
     
 }
