@@ -1,0 +1,206 @@
+
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../../globalstyle.css">
+        <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../../../card_white.css">
+
+    </head>
+
+    <body>
+
+        
+        <div class="pageHt">
+            <div class="pageContentCont">
+                <div class="menuStyle">
+                    <ImgLink onClick="location.href='../../../index.html'">
+                        <img src="../../../lib/images/3.svg">
+                    </ImgLink>
+                    <Txlink  onClick="location.href='../../../learn/index.html'">Learn</Txlink>
+                    <Txlink  onClick="location.href='../../../review/index.html'">Review</Txlink>
+                    <Txlink class="active" onClick="location.href='../../../practice/index.html'">Practice</Txlink>
+                    <ImgLink  onClick="location.href='https://theanonymoushelper.wixsite.com/home'">
+                        <img src="../../../lib/images/4.svg">
+                    </ImgLink>
+                </div>
+                
+<div>
+    <h1 class="titleText" style="padding-top: 100px; font-size: 50px;">Unit 1 - Algebra</h1>
+    <p class="bodyTextSm" style="font-size: 30px; font-weight: 700; width: 80%; color: white;">Topic 1 - Linear Functions</p>
+    <div class="row">
+    <div class="column">
+    <div id="container">
+        <div class="card">
+            
+            <div class="card_info">
+                <span class="tag">Quiz</span>
+                <span class="tag">Easy</span>
+
+                <div class="name">Finding Y-Intercepts</div>
+
+                <p></p>
+
+                <button class="buttonStOr" onclick="redirectPage('211-yintlinear')">Practice</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="column">
+    <div id="container">
+            <div class="card">
+    
+                <div class="card_info">
+                    <span class="tag">Quiz</span>
+                    <span class="tag">Easy</span>
+    
+                    <div class="name">Finding X-Intercepts</div>
+    
+                    <p></p>
+    
+                    <button class="buttonStOr" onclick="redirectPage('212-xintlinear')">Practice</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+    <div id="container">
+                <div class="card">
+
+                    <div class="card_info">
+                        <span class="tag">Quiz</span>
+                        <span class="tag">Medium</span>
+        
+                        <div class="name">Finding Other Points on a Line</div>
+        
+                        <p></p>
+        
+                        <button class="buttonStOr" onclick="redirectPage('213-pointlinear')">Practice</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="column">
+    <div id="container">
+                    <div class="card">
+            
+                        <div class="card_info">
+                            <span class="tag">Quiz</span>
+                            <span class="tag">Hard</span>
+            
+                            <div class="name">System of Equations</div>
+            
+                            <p></p>
+            
+                            <button class="buttonStOr" onclick="redirectPage('214-systemlinear')">Practice</button>
+                        </div>
+                    </div>
+        </div>
+    </div>
+  
+
+    </div>
+    </div>
+
+
+    <div style="height: 150px;"></div>
+    <p class="bodyTextSm" style="font-size: 30px; font-weight: 700; width: 80%; color: white;">Topic 2 - Arithmetic Sequences</p>
+    <div class="row">
+        <div class="column">
+        <div id="container">
+            <div class="card">
+                
+                <div class="card_info">
+                    <span class="tag">Quiz</span>
+                    <span class="tag">Easy</span>
+    
+                    <div class="name">Arithmetic Sequences and Terms</div>
+    
+                    <p></p>
+    
+                    <button class="buttonStOr">Practice</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="column">
+        <div id="container">
+                <div class="card">
+        
+                    <div class="card_info">
+                        <span class="tag">Quiz</span>
+                        <span class="tag">Easy</span>
+        
+                        <div class="name">Using Sigma Notation for Sequences</div>
+        
+                        <p></p>
+        
+                        <button class="buttonStOr">Practice</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+        <div id="container">
+                    <div class="card">
+    
+                        <div class="card_info">
+                            <span class="tag">Quiz</span>
+                            <span class="tag">Medium</span>
+            
+                            <div class="name">Using Arithmetic Sequences</div>
+            
+                            <p></p>
+            
+                            <button class="buttonStOr">Practice</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="column">
+        <div id="container">
+                        <div class="card">
+                
+                            <div class="card_info">
+                                <span class="tag">Word Problems</span>
+                                <span class="tag">Hard</span>
+                
+                                <div class="name">Using Arithmetic Sequences</div>
+                
+                                <p></p>
+                
+                                <button class="buttonStOr">Practice</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+      
+    
+        </div>
+        </div>
+    
+    <div style="height: 150px;"></div>
+
+    <div class="footer">
+        <ImgLink onClick="location.href='index.html'">
+            <img src="../../../lib/images/2.svg">
+        </ImgLink>
+        <p class="bodyTextSm">Creating tools to help students through our online platform. Developed independently by students, not affiliated with/endorsed by any academic institution. © The Anonymous Helpers 2022.</p>
+    </div>
+
+</div>
+
+
+
+<script>
+    let redirectPage = (quizNameRedirect) => {
+
+
+        
+        var url = "../../quiz.html" +
+            "?subject=" + 'math'  + 
+            "&ident=" + '2-functions' +
+            "&quizName=" + quizNameRedirect;
+    
+        window.location.href = url;
+    }
+    </script>
