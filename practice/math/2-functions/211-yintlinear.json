@@ -1,8 +1,8 @@
 {
     "quizID": 1000,
     "title": "Biology Sample Quiz",
-    "totalQuCount": 3, 
-    "quCountToDisplay": 3,
+    "totalQuCount": 6, 
+    "quCountToDisplay": 4,
     "questionList": [
         {
             "qu": "What is the y-intercept of $y = 2x+3$",
@@ -15,6 +15,42 @@
             "timeMid": 8,
             "timeLower": 10,
             "solution": "The c component of the line is 3. Therefore, when x is equal to 0, 2 multiplied by x=0 is equal to 0, and 0+3 is equal to 3. Therefore, the y value at x=0 (which is the y-axis) is 3."
+        },
+        {
+            "qu": "What is the y-intercept of $y = 3x+5$",
+            "a1": "2",
+            "a2": "4",
+            "a3": "5",
+            "a4": "9",
+            "ans": 3,
+            "timeUpper": 5,
+            "timeMid": 8,
+            "timeLower": 10,
+            "solution": "The c component of the line is 5. Therefore, when x is equal to 0, 3 multiplied by x=0 is equal to 0, and 0+5 is equal to 5. Therefore, the y value at x=0 (which is the y-axis) is 5."
+        },
+        {
+            "qu": "What is the y-intercept of $y = 3x+5$",
+            "a1": "2",
+            "a2": "4",
+            "a3": "5",
+            "a4": "9",
+            "ans": 3,
+            "timeUpper": 5,
+            "timeMid": 8,
+            "timeLower": 10,
+            "solution": "The c component of the line is 5. Therefore, when x is equal to 0, 3 multiplied by x=0 is equal to 0, and 0+5 is equal to 5. Therefore, the y value at x=0 (which is the y-axis) is 5."
+        },
+        {
+            "qu": "What is the y-intercept of $y = 3x+5$",
+            "a1": "2",
+            "a2": "4",
+            "a3": "5",
+            "a4": "9",
+            "ans": 3,
+            "timeUpper": 5,
+            "timeMid": 8,
+            "timeLower": 10,
+            "solution": "The c component of the line is 5. Therefore, when x is equal to 0, 3 multiplied by x=0 is equal to 0, and 0+5 is equal to 5. Therefore, the y value at x=0 (which is the y-axis) is 5."
         },
         {
             "qu": "What is the y-intercept of $y = 3x+5$",

@@ -1,4 +1,18 @@
-
+window.PageConfig = {
+    before: (() => {
+      let pagedResolve;
+      let pagedPromise = new Promise((resolve) => {pagedResolve = resolve});
+      
+      MathJax.startup = {
+        ready: () => {
+          MathJax.startup.defaultReady();
+          MathJax.startup.promise.then(() => pagedResolve());
+        }
+      };
+      
+      return () => pagedPromise;
+    })()
+  };
 
 function getQuizParameter(parameterName) {
     let parameters = new URLSearchParams(window.location.search);
@@ -119,12 +133,16 @@ fetch(directQ)
         questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
         console.log("Speed Upper Req:" + speedUpper)
        } )
- MathJax.typesetPromise();
+
+
+
+
 
 checkButton.addEventListener('click', checkAnswer);
 continueButton.addEventListener('click', loadNextQuestion);
 
 setInterval(function() {speedTimer += 1; console.log("Tick:" + speedTimer)}, 1000);
+
 
 function checkAnswer() {
     selectedValue = selection.value;
