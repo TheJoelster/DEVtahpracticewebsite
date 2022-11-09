@@ -119,7 +119,7 @@ fetch(directQ)
         questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
         console.log("Speed Upper Req:" + speedUpper)
        } )
-
+ MathJax.typesetPromise();
 
 checkButton.addEventListener('click', checkAnswer);
 continueButton.addEventListener('click', loadNextQuestion);
@@ -215,6 +215,7 @@ function loadNextQuestion() {
     checkButton.style.visibility = 'visible';
     continueDiv.style.visibility = 'hidden';
     solutionDiv.style.visibility = 'hidden';
+    MathJax.typesetPromise();
     speedTimer = 0;
     setInterval(function () {}, 1000);
     }
