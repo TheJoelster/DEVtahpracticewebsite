@@ -1,0 +1,86 @@
+{
+    "quizID": 1000,
+    "title": "What is a Rational Function? Quiz",
+    "totalQuCount": 6, 
+    "quCountToDisplay": 5,
+    "questionList": [
+        {
+            "qu": "Which one of these functions is the base function of a rational function?",
+            "a1": "`y = (x-2)/(x+3)`",
+            "a2": "`y = (1)/(x)`",
+            "a3": "`y = x`",
+            "a4": "`y = 1`",
+            "ans": 2,
+            "timeUpper": 5,
+            "timeMid": 8,
+            "timeLower": 10,
+            "solution": "`y = 1/x`, as its the simplest form of a rational function"
+        },
+        {
+            "qu": "What are asymptotes?",
+            "a1": "A line in a graph where a function gets closer but never touches",
+            "a2": "A line in a graph where a function gets closer but touches",
+            "a3": "A line in a graph where a function gets farther but never touches",
+            "a4": "A line in a graph where a function crosses",
+            "ans": 1,
+            "timeUpper": 7,
+            "timeMid": 9,
+            "timeLower": 12,
+            "solution": "A line in a graph where a function gets closer but never touches"
+        },
+        {
+            "qu": "For the equation `y = 1/x`, as x tends to `0^{+}`...",
+            "a1": "`y = 0`",
+            "a2": "y tends to `infty^{+}`",
+            "a3": "x tends to `infty^{+}`",
+            "a4": "y tends to `infty^{-}`",
+            "ans": 2,
+            "timeUpper": 7,
+            "timeMid": 9,
+            "timeLower": 12,
+            "solution": "y tends to `infty^{+}`, as x is coming to the asymptote from the negative side"
+        },
+        {
+            "qu": "When an equation is written `(ax+b)/(cx+d)`, what is an easy way to determine a vertical asymptote in all cases?",
+            "a1": "Make `(ax+b) = 0`",
+            "a2": "Make `(cx+d) = 0`",
+            "a3": "Make x=0`",
+            "a4": "Make y=0`",
+            "ans": 2,
+            "timeUpper": 10,
+            "timeMid": 12,
+            "timeLower": 15,
+            "solution": "Since nothing can be divided by 0, if cx+d (the denominator) is 0, it cannot be equal to that x value."
+        },
+        {
+            "qu": "When an equation is written `(ax+b)/(cx+d)`, what is an easy way to determine the x-intercepts in all cases?",
+            "a1": "Make `(ax+b) = 0`",
+            "a2": "Make `(cx+d) = 0`",
+            "a3": "Make x=0",
+            "a4": "Make y=`infty`",
+            "ans": 1,
+            "timeUpper": 10,
+            "timeMid": 12,
+            "timeLower": 15,
+            "solution": "Since 0 divided by anything is 0, making ax+b (the numerator) equal 0 will result in a y-value of 0, which is the x-axis, allowing you to find the x-intercepts."
+        },
+        {
+            "qu": "Why is `y = 1/x` discontinuous?",
+            "a1": "Has no jumps or gaps",
+            "a2": "cannot be factored",
+            "a3": "Has no x or y intercepts",
+            "a4": "Restriction in the domain",
+            "ans": 4,
+            "timeUpper": 7,
+            "timeMid": 9,
+            "timeLower": 12,
+            "solution": "Due to a restriction in the domain, as that causes a gap since x cannot be the listed number (`x = 0` in this case)"
+        }
+
+
+
+
+
+    ]
+}
+
