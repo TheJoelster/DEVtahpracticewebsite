@@ -6,10 +6,10 @@
     "questionList": [
         {
             "qu": "Which one of these functions is the base function of a rational function?",
-            "a1": "`y = (x-2)/(x+3)`",
-            "a2": "`y = (1)/(x)`",
-            "a3": "`y = x`",
-            "a4": "`y = 1`",
+            "a1": "y = (x-2)/(x+3)",
+            "a2": "y = 1/x",
+            "a3": "y = x",
+            "a4": "y = 1",
             "ans": 2,
             "timeUpper": 5,
             "timeMid": 8,
