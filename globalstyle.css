@@ -87,10 +87,7 @@ body, html {
     font-weight: bold;
 }
 
-.centerButtonOverlay {
-    position: absolute;
-    top: 80%;
-}
+
 
 .button {
     background-color: rgb(100, 110, 200);
@@ -411,4 +408,42 @@ line-height: 1.4;
 
 img {
     object-fit: cover;
+}
+
+
+.centerButtonOverlay {
+    position: absolute;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    outline: none; 
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: block;
+    width: 25%;
+}
+
+    .centerButtonOverlay::before {
+    border-radius: inherit;
+    content: '';
+    opacity: 0;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0; 
+}
+
+    .centerButtonOverlay:hover::before {
+    filter: blur(30px); 
+    opacity: 1;
 }

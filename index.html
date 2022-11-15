@@ -10,6 +10,33 @@
         font-size: 30px;
         }
         }
+
+        .colorP {
+        color: #56168a;
+        background-color: #c0a1ff;
+        }
+
+        .colorP::before {
+        background: #a844fa;
+        }
+
+        .colorG {
+        color: #238a16;
+        background-color: #a2ffa1;
+        }
+
+        .colorG::before {
+        background: #4bea36;
+        }
+
+        .colorO {
+        color: #8a5d16;
+        background-color: #ffdba1;
+        }
+
+        .colorO::before {
+        background: #ffb742;
+        }
         </style>
 
     <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="globalstyle.css">
@@ -48,9 +75,9 @@
                     <p class="centerBottomTextOverlay" style="font-size: 25px; width: 55%;">Let's start learning.</p>
 
                     <span>
-                        <button class="buttonStPr; centerButtonOverlay" style="left: 32.5%;">Learn</button>
-                        <button class="buttonStGr; centerButtonOverlay" style="left: 47.5%;">Review</button>
-                        <button class="buttonStOr; centerButtonOverlay" style="left: 62.5%;">Practice</button>
+                        <button class="centerButtonOverlay colorP" style="left: 20%;" onClick="location.href='learn/index.html'">Learn</button>
+                        <button class="centerButtonOverlay colorG" style="left: 50%;" onClick="location.href='review/index.html'">Review</button>
+                        <button class="centerButtonOverlay colorO" style="left: 80%;" onClick="location.href='practice/index.html'">Practice</button>
                     </span>
                 </div>
 
@@ -101,7 +128,19 @@
                 <img src="lib/images/2.svg">
             </ImgLink>
             <p class="bodyTextSm">Creating tools to help students through our online platform. Developed independently by students, not affiliated with/endorsed by any academic institution. © The Anonymous Helpers 2022.</p>
-        </div>
+            
+            <div style="height: 20px;"></div>
+            <div style=" margin: auto;">
+                <ImgLink width="16" height="16" onClick="location.href='https://www.youtube.com/channel/UCtSIplvtgg2ZT1QHRycB1gQ'">
+                    <img width="32" height="22" src="lib/images/logo_yt.png">
+                </ImgLink>
+                <ImgLink width="16" height="16" onClick="location.href='https://www.instagram.com/the_anonymous_helpers/'">
+                    <img width="22" height="22" src="lib/images/logo_insta.png">
+                </ImgLink>
+                <ImgLink width="16" height="16" onClick="location.href='about/index.html'">
+                    <img width="22" height="22" src="lib/images/logo_aboutus.png">
+                </ImgLink>
+            </div>
 
     </div>
 
