@@ -79,12 +79,17 @@ body, html {
 
 .centerBottomTextOverlay {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 45px;
     width: 80%;
     font-weight: bold;
+}
+
+.centerButtonOverlay {
+    position: absolute;
+    top: 80%;
 }
 
 .button {
