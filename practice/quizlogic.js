@@ -50,6 +50,7 @@ var feedbackText = document.getElementById("feedbackText")
 var solutionExpand = document.getElementById("solutionExpand")
 var questionNumber = document.getElementById("questionNumber")
 var solutionText = document.getElementById("sol-text") 
+var titleofQuiz = document.getElementById("quizTitle") 
 
 //speedscore variable
 var speedUpper;
@@ -131,6 +132,7 @@ fetch(directQ)
         speedLower = dataQA[i]["timeLower"]
         solutionText.textContent = dataQA[i]["solution"]
         questionNumber.innerHTML = "Question " + (n+1) + " of " + (dataQuizLength);
+        titleofQuiz.innerHTML = data["title"]
         console.log("Speed Upper Req:" + speedUpper)
        } )
 
