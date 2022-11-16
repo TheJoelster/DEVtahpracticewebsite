@@ -1,0 +1,76 @@
+title {
+margin-top: 150px;
+font-size: 48px;
+font-weight: bold;
+color: white;
+}
+
+h1 {
+margin-top: 50px;
+font-size: 38px;
+font-weight: bold;
+color: white;
+}
+
+h2 {
+margin-top: 40px;
+font-size: 28px;
+font-weight: normal;
+color: white;
+}
+
+p {
+margin-top: 25px;
+font-size: 18px;
+font-weight: normal;
+color: white;
+}
+
+
+details {
+border-radius: 15px;
+padding: 15px;
+font-size: 25px;
+width: 60%;
+margin: auto;
+margin-top: 50px;
+}
+
+summary {
+font-size: 24px;
+color: white;
+font-weight: bold;
+text-align: center;
+}
+
+details span {
+height: 20px;
+}
+
+details div {
+width: 90%;
+margin: auto;
+border-radius: 5px;
+}
+
+details div p {
+margin: auto;
+width: 90%;
+text-align: center;
+}
+
+.purpleExample {
+background-color: rgb(117, 81, 117);
+}
+
+.purpleExample div {
+background-color: rgb(144, 114, 144);
+}
+
+.greenExample {
+background-color: rgb(81, 117, 83);
+}
+
+.greenExample div {
+background-color: rgb(114, 144, 115);
+}
