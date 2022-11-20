@@ -1,7 +1,7 @@
 {
     "quizID": 1000,
     "title": "Types of Transformations",
-    "totalQuCount": 8, 
+    "totalQuCount": 9, 
     "quCountToDisplay": 4,
     "questionList": [
         {
@@ -87,6 +87,18 @@
             "timeMid": 15,
             "timeLower": 20,
             "solution": "c is equal to -2, and d is equal to 4, therefore the vector (-2,4) represents the translation."
+        },
+        {
+            "qu": "Which vector represents the translation of the function `y=3f(x-3)+2`?",
+            "a1": "(3,2)",
+            "a2": "(3,2)",
+            "a3": "(-3,2)",
+            "a4": "(-3,2)",
+            "ans": 2,
+            "timeUpper": 10,
+            "timeMid": 15,
+            "timeLower": 20,
+            "solution": "c is equal to 3, and d is equal to 2, therefore the vector (3,2) represents the translation."
         },
         {
             "qu": "Which vector represents the translation of the function `y=f(3(x+1))-3`?",
