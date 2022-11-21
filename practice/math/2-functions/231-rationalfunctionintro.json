@@ -6,10 +6,10 @@
     "questionList": [
         {
             "qu": "Which one of these functions is the base function of a rational function?",
-            "a1": "`y = x-2/x+3`",
-            "a2": "`y = 1/x`",
-            "a3": "`y = x`",
-            "a4": "`y = 1`",
+            "a1": "y = x-2/x+3",
+            "a2": "y = 1/x",
+            "a3": "y = x",
+            "a4": "y = 1",
             "ans": 2,
             "timeUpper": 5,
             "timeMid": 8,
@@ -65,7 +65,7 @@
             "solution": "(0,-1/6), by equating the x value in the function to zero."
         },
         {
-            "qu": "Calculate the x-intercept(s) of `y = 1/(x-3)(x+2)`",
+            "qu": "Calculate the x-intercept(s) of `y = 1/((x-3)(x+2))`",
             "a1": "N/A",
             "a2": "(0,0)",
             "a3": "Not enough information",
@@ -77,7 +77,7 @@
             "solution": "N/A, as equating the y value to zero results in 0 = 1, which is a math error."
         },
         {
-            "qu": "Calculate the x-intercept(s) of `y = 1/x+7`",
+            "qu": "Calculate the x-intercept(s) of `y = 1/(x+7)`",
             "a1": "(0,1/7)",
             "a2": "(-7, 0)",
             "a3": "N/A",
@@ -89,7 +89,7 @@
             "solution": "N/A, as equating the y value to zero results in 0 = 1, which is a math error." 
         },
         {
-            "qu": "Calculate the horizontal asymptote of 1/x",
+            "qu": "Calculate the horizontal asymptote of `1/x`",
             "a1": "`y = 0`",
             "a2": "`y = x`",
             "a3": "(0,0)",
@@ -102,10 +102,10 @@
         },
         {
             "qu": "Which base function will result in the base function being translated 2 units up?",
-            "a1": "`y = 1/x`",
-            "a2": "`y = 2/x`",
-            "a3": "`y = 1/x+2`",
-            "a4": "`y = 1/x + 2`",
+            "a1": "y = 1/x",
+            "a2": "y = 2/x",
+            "a3": "y = 1/x+2",
+            "a4": "y = 1/x + 2",
             "ans": 3,
             "timeUpper": 7,
             "timeMid": 9,
@@ -125,11 +125,11 @@
             "solution": "Restriction in the domain, which causes a gap in the function."
         },
         {
-            "qu": "Calculate the horizontal asymptote of 1/x + 3",
+            "qu": "Calculate the horizontal asymptote of `1/(x + 3)`",
             "a1": "y = 3",
             "a2": "y = -3",
-            "a3": "`y = -1/3`",
-            "a4": "`y = 1/2`",
+            "a3": "y = -1/3",
+            "a4": "y = 1/2",
             "ans": 1,
             "timeUpper": 7,
             "timeMid": 9,
@@ -137,7 +137,7 @@
             "solution": "y= 3, as base function's HA is 0, and entire function is translated by 3 units up, thus resultuing in `y = 3`."
         },
         {
-            "qu": "Calculate the x-intercept(s) of `y = (x+2)(x+3)/(x-1)(x+7)`",
+            "qu": "Calculate the x-intercept(s) of `y = ((x+2)(x+3))/((x-1)(x+7))`",
             "a1": "(2,0), (3,0)",
             "a2": "(2,0), (-7,0)",
             "a3": "(-2,0), (7,0)",
@@ -149,7 +149,7 @@
             "solution": "(-2,0), (-3,0), after substituting y = 0 into the function."
         },
         {
-            "qu": "Calculate the y-intercept(s) of `y = (x+2)(x+3)/(x-1)(x+7)`",
+            "qu": "Calculate the y-intercept(s) of `y = ((x+2)(x+3))/((x-1)(x+7))`",
             "a1": "(3, 0), (2, 0)",
             "a2": "(-2, 0), (-3, 0)",
             "a3": "(0, -6/7)",
@@ -161,7 +161,7 @@
             "solution": "(0, -6/7), after substituting x = into the function."
         },
         {
-            "qu": "Calculate the y-intercept of `1/x+3`",
+            "qu": "Calculate the y-intercept of `1/(x+3)`",
             "a1": "y = 3",
             "a2": "y = 1/3",
             "a3": "(0, 3)",
@@ -173,7 +173,7 @@
             "solution": "(0, 1/3) after substituting x = 0 into the equation."
         },
         {
-            "qu": "Calculate the x-intercept of `1/x+3`",
+            "qu": "Calculate the x-intercept of `1/(x+3)`",
             "a1": "x = 3",
             "a2": "N/A",
             "a3": "(0, 1/3)",
@@ -185,7 +185,7 @@
             "solution": "N/A, as equating the y value to zero results in 0 = 1, which is a math error."
         },
         {
-            "qu": "Find the x intercepts of `y=(x+1)(x-3)(x+2)/(x-2)(x+6)`",
+            "qu": "Find the x intercepts of `y=((x+1)(x-3)(x+2))/((x-2)(x+6))`",
             "a1": "(3,0), (6,0),(2,0)",
             "a2": "(1,0), (3,0),(-2,0)",
             "a3": "(2,0), (-6,0)",
@@ -197,7 +197,7 @@
             "solution": "(1,0), (3,0),(-2,0) after equating y to 0 and solving."
         },
         {
-            "qu": "Find the y intercepts of `y=(x+1)(x-3)(x+2)/(x-2)(x+6)`",
+            "qu": "Find the y intercepts of `y=((x+1)(x-3)(x+2))/((x-2)(x+6))`",
             "a1": "y = 1/6",
             "a2": "(0, 1/2)",
             "a3": "y = 4",
