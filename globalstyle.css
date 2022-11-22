@@ -29,6 +29,25 @@ body, html {
     color: white;
 }
 
+/*animations inspired by Fireship on YouTube*/
+
+.hiddenAnimate {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 0.5s;
+    }
+
+.showAnimate {
+    opacity: 1; 
+    filter: blur(0px);
+    }
+
+@media(prefers-reduced-motion) {
+    .hiddenAnimate {
+        transition: none;
+    }
+}
+
 .container {
     position: relative;
     text-align: center;
