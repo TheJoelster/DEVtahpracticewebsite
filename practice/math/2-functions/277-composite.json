@@ -1,0 +1,101 @@
+{
+    "quizID": 1000,
+    "title": "Composite Functions",
+    "totalQuCount": 7, 
+    "quCountToDisplay": 5,
+    "questionList": [
+        {
+            "qu": "If `f(x)=1/x` and `g(x)=2x+4`, what is `f@g(2)`?",
+            "a1": "1/16",
+            "a2": "1/8",
+            "a3": "1/4",
+            "a4": "Undefined",
+            "ans": 2,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `f@g(x)`, it is `1/(2x+4)`. If we substitute 2 for x, we get `1/(2(2)+4)`, which simplifies to `1/8`."
+        },
+        {
+            "qu": "If `f(x)=2/x` and `g(x)=3x+3`, what is `f@g(-1)`?",
+            "a1": "1/6",
+            "a2": "1/12",
+            "a3": "2/6",
+            "a4": "Undefined",
+            "ans": 4,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `f@g(x)`, it is `1/(3x+3)`. If we substitute -1 for x, we get `1/(3(-1)+3)`, which simplifies to `1/0`, which is undefined, as you cannot divide any number by 0."
+        },
+        {
+            "qu": "If `f(x)=2/x` and `g(x)=3/x`, what is `f@g(6)`?",
+            "a1": "1/2",
+            "a2": "2",
+            "a3": "4",
+            "a4": "1/9",
+            "ans": 3,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `f@g(x)`, it is `2/(3/x)`. If we substitute 6 for x, we get `2/(3/(6))`, which simplifies to `2`."
+        },
+        {
+            "qu": "If `f(x)=1/(x/12)` and `g(x)=3/(x+3)`, what is `f@g(9)`?",
+            "a1": "1/6",
+            "a2": "6",
+            "a3": "1/36",
+            "a4": "36",
+            "ans": 4,
+            "timeUpper": 24,
+            "timeMid": 32,
+            "timeLower": 40,
+            "solution": "If we find the composite function `f@g(x)`, it is `1/((3/(x+3))/12)`. If we substitute 6 for x, we get `1/((3/(6+3))/12)`, which simplifies to `1/(1/36)`, which further simplifies to `36`."
+        },
+        {
+            "qu": "If `f(x)=7/(x+3)` and `g(x)=4x+12`, what is `f@g(7)`?",
+            "a1": "7/10",
+            "a2": "7/40",
+            "a3": "7/43",
+            "a4": "Undefined",
+            "ans": 3,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `f@g(x)`, it is `7/((4x+12)+3)`. If we substitute 7 for x, we get `7/((4(7)+12)+3)`, which simplifies to `7/43`."
+        },
+        {
+            "qu": "If `f(x)=x/2` and `g(x)=x+3`, what is `g@f(18)`?",
+            "a1": "9/2",
+            "a2": "12",
+            "a3": "21/2",
+            "a4": "21",
+            "ans": 2,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `g@f(x)`, it is `(x/2)+3`. If we substitute 18 for x, we get `(18/2)+3`, which simplifies to `12`."
+        },
+        {
+            "qu": "If `f(x)=12/x` and `g(x)=3/x`, what is `g@f(18)`?",
+            "a1": "9/2",
+            "a2": "9",
+            "a3": "18/4",
+            "a4": "18",
+            "ans": 1,
+            "timeUpper": 16,
+            "timeMid": 24,
+            "timeLower": 32,
+            "solution": "If we find the composite function `g@f(x)`, it is `3/(12/x)`. If we substitute 18 for x, we get `3/(12/18)`, which simplifies to `9/2`."
+        }
+     
+
+
+
+
+
+
+
+
+    ]
+}
