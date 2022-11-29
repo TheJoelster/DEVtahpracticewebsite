@@ -230,10 +230,10 @@ function loadNextQuestion() {
     randomQ();
     console.log("Questionbank: " + i);
     questionDisplay.textContent = dataQA[i]["qu"]
-    o1.textContent = dataQA[i]["a1"]
-    o2.textContent = dataQA[i]["a2"]
-    o3.textContent = dataQA[i]["a3"]
-    o4.textContent = dataQA[i]["a4"]
+    o1.innerHTML = dataQA[i]["a1"] + '<input type="radio" name="radio" value="1"><span class="checkmark"></span>'
+    o2.innerHTML = dataQA[i]["a2"] + '<input type="radio" name="radio" value="2"><span class="checkmark"></span>'
+    o3.innerHTML = dataQA[i]["a3"] + '<input type="radio" name="radio" value="3"><span class="checkmark"></span>'
+    o4.innerHTML = dataQA[i]["a4"] + '<input type="radio" name="radio" value="4"><span class="checkmark"></span>'
     ansValue = dataQA[i]["ans"];
     speedUpper = dataQA[i]["timeUpper"]
     speedMidRange = dataQA[i]["timeMid"]
