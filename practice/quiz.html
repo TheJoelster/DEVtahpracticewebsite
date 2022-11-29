@@ -78,6 +78,69 @@
 }
 
 
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 40%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #f38321;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
 </style>
 
 <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="../globalstyle.css">
@@ -110,12 +173,24 @@ MathJax = {
         <div><h1 id="quDisplay" style="margin: auto; text-align: center; margin-bottom: 30px;">Question</h1></div>
         <div><body style="margin: auto; text-align: center; margin-bottom: 70px;"></body></div>
 
-        <select required name="options" id="multiplechoice" multiple>
-        <div><option value="1" id="a1Display"  style="margin: auto; text-align: center; margin-bottom: 30px;" >Option 1</option></div>
-        <div><option value="2" id="a2Display"  style="margin: auto; text-align: center; margin-bottom: 30px;" >Option 2</option></div>
-        <div><option value="3" id="a3Display"  style="margin: auto; text-align: center; margin-bottom: 30px;" >Option 3</option></div>
-        <div><option value="4" id="a4Display"  style="margin: auto; text-align: center; margin-bottom: 30px;" >Option 4</option></div>
-        </select>
+
+        <label class="container">One
+          <input type="radio" checked="checked" name="radio" id="a1Display" value="1">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Two
+          <input type="radio" name="radio" id="a2Display" value="2">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Three
+          <input type="radio" name="radio" id="a3Display" value="3">
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">Four
+          <input type="radio" name="radio" id="a4Display" value="4">
+          <span class="checkmark"></span>
+        </label>
+
 
 
         <div><button id="checkButton" class="buttonStGr" style="margin: auto; text-align: center;">Check</button></div>
