@@ -154,7 +154,7 @@ function checkAnswer() {
     for(op = 0; op < opValue.length; op++) {
         console.log("quOp:" + op);
         if(opValue[op].checked) {
-        selectedValue = op;
+        selectedValue = (op - 1);
         console.log("true");
         }
         else {console.log("true")}
