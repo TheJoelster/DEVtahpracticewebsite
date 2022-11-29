@@ -151,10 +151,13 @@ setInterval(function() {speedTimer += 1; console.log("Tick:" + speedTimer)}, 100
 
 
 function checkAnswer() {       
-    for(op = 1; op < opValue.length+1; op++) {
-        if(opValue[op].checked); {
+    for(op = 0; op < opValue.length; op++) {
+        console.log("quOp:" + op);
+        if(opValue[op].checked) {
         selectedValue = op;
+        console.log("true");
         }
+        else {console.log("true")}
     }
 
     checkButton.style.visibility = 'hidden';
