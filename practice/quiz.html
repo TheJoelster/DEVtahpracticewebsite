@@ -81,7 +81,7 @@
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
+  padding: 10px;
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 22px;
@@ -89,6 +89,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-style: solid;
+  width: 70%;
+  margin: auto;
+  border-color: rgb(117, 111, 100);
 }
 
 /* Hide the browser's default radio button */
@@ -101,8 +105,8 @@
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
-  top: 0;
-  left: 40%;
+  top: 25%;
+  left: 2%;
   height: 25px;
   width: 25px;
   background-color: #eee;
@@ -178,18 +182,22 @@ MathJax = {
           <input type="radio" checked="checked" name="radio" id="a1Display" value="1">
           <span class="checkmark"></span>
         </label>
+        <div style="height:20px"></div>
         <label class="container">Two
           <input type="radio" name="radio" id="a2Display" value="2">
           <span class="checkmark"></span>
         </label>
+        <div style="height:20px"></div>
         <label class="container">Three
           <input type="radio" name="radio" id="a3Display" value="3">
           <span class="checkmark"></span>
         </label>
+        <div style="height:20px"></div>
         <label class="container">Four
           <input type="radio" name="radio" id="a4Display" value="4">
           <span class="checkmark"></span>
         </label>
+        <div style="height:20px"></div>
 
 
 
