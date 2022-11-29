@@ -151,9 +151,9 @@ setInterval(function() {speedTimer += 1; console.log("Tick:" + speedTimer)}, 100
 
 
 function checkAnswer() {       
-    for(op = 0; op < opValue.length; op++) {
+    for(op = 1; op < opValue.length+1; op++) {
         if(opValue[op].checked); {
-        selectedValue = opValue[op].value
+        selectedValue = op;
         }
     }
 
@@ -166,8 +166,8 @@ function checkAnswer() {
 
     if (selectedValue == ansValue) {
         console.log("correct")
-        console.log(ansValue)
-        console.log(selectedValue)
+        console.log("correct answer: " + ansValue)
+        console.log("selected answer: " + selectedValue)
         console.log("Speed Upper Req:" + speedUpper)
 
         continueDiv.style.backgroundColor = '#d5ffd5';
