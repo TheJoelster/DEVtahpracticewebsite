@@ -24,9 +24,9 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(29, 29, 36);
+    background-color: rgb(255, 255, 255);
     font-family: 'Lato', Arial, Helvetica, sans-serif;
-    color: white;
+    color: rgb(29, 29, 36);
 }
 
 /*animations inspired by Fireship on YouTube*/
@@ -51,7 +51,7 @@ body, html {
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 
@@ -145,7 +145,7 @@ body, html {
 .buttonB:hover {opacity: 1}
 
 .menuStyle {
-background-color: rgb(49, 49, 56);
+background-color: rgb(154, 188, 221);
 float: left;
 width: 100%;
 }
@@ -177,11 +177,11 @@ font-size: 24px;
 }
 
 .menuStyle Txlink:hover {
-    color: rgb(150, 150, 150);
+    color: rgb(169, 243, 255);
 }
 
 .menuStyle Txlink.active {
-    background-color: rgb(29, 29, 36);
+    background-color: rgb(208, 226, 251);
     border: none;
     border-radius: 45px;
     outline: hidden;
@@ -189,11 +189,11 @@ font-size: 24px;
 
 
 .menuStyle Imglink:hover {
-    color: rgb(150, 150, 150);
+    color: rgb(169, 243, 255);
 }
 
 .menuStyle ImgLink.active {
-    background-color: rgb(29, 29, 36);
+    background-color: rgb(208, 226, 251);
     border: none;
     border-radius: 45px;
     outline: hidden;
@@ -227,7 +227,7 @@ position: absolute;
 height: 270px;
 bottom: 0;
 width: 100%;
-background-color: rgb(49, 49, 56);
+background-color: rgb(154, 188, 221);
 color: white;
 text-align: center;
 }
